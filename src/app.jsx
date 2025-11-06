@@ -26,11 +26,11 @@ const App = ()=>{
         {location.pathname !== "/login" && <Nav />}
         <Routes>
             <Route path='technolife/' element={<Home/>}/>
-            <Route path='technolife/list/:category' element={<List/>}/>
-            <Route path='technolife/product/:id' element={<Product/>}/>
-            <Route path='technolife/cart' element={<Cart/>}/>
-            <Route path='technolife/login' element={<Login/>}/>
-            <Route path='technolife/*' element={<Error/>}/>
+            <Route path='/list/:category' element={<List/>}/>
+            <Route path='/product/:id' element={<Product/>}/>
+            <Route path='/cart' element={<Cart/>}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='*' element={<Error/>}/>
         </Routes>
         {location.pathname !== "/login" && <Footer/>}
         </CartProvider>
