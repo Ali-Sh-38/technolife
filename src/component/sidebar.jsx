@@ -19,7 +19,7 @@ useEffect(() => {
                 <ul className="flex flex-col text-gray-500 dark:text-gray-200 h-100 overflow-y-scroll">
                     <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
                         <Link to="/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
-                            <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="/images/laptop logo.svg" alt="laptop" />
+                            <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/laptop logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">لپتاپ</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -61,7 +61,7 @@ useEffect(() => {
                     </li>
                     <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
                         <Link to="/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
-                            <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="/images/phone logo.svg" alt="laptop" />
+                            <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/phone logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">موبایل</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -103,7 +103,7 @@ useEffect(() => {
                     </li>
                     <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
                         <Link to="/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
-                            <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="/images/handsFree logo.svg" alt="laptop" />
+                            <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/handsFree logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">هدفون و هندزفری</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -135,7 +135,7 @@ useEffect(() => {
                     </li>
                     <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
                         <Link to="/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
-                            <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="/images/handWatch logo.svg" alt="laptop" />
+                            <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/handWatch logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">ساعت هوشمند</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -178,7 +178,7 @@ useEffect(() => {
                     {[...Array(5)].map(()=>(
                     <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
                         <Link to="/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
-                            <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="/images/laptop logo.svg" alt="laptop" />
+                            <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/laptop logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">لپتاپ</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -261,7 +261,7 @@ useEffect(() => {
                         <ul>
                             <li>
                                 <Link to="/list" onClick={()=>setOpen((prev)=>!prev)} className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
-                                    <img className="w-10 bg-gray-300 dark:bg-gray-700 p-1 rounded-full shadow" src="/images/laptop logo.svg" alt="laptop" />
+                                    <img className="w-10 bg-gray-300 dark:bg-gray-700 p-1 rounded-full shadow" src="images/laptop logo.svg" alt="laptop" />
                                     <h3 className="text-[18px] dark:text-gray-300">لپتاپ</h3>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -270,7 +270,7 @@ useEffect(() => {
                             </li>
                             <li>
                                 <Link to="/list" onClick={()=>setOpen((prev)=>!prev)} className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
-                                    <img className="w-10 bg-gray-300 dark:bg-gray-700 p-1 rounded-full shadow" src="/images/phone logo.svg" alt="laptop" />
+                                    <img className="w-10 bg-gray-300 dark:bg-gray-700 p-1 rounded-full shadow" src="images/phone logo.svg" alt="laptop" />
                                     <h3 className="text-[18px] dark:text-gray-300">موبایل</h3>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -279,7 +279,7 @@ useEffect(() => {
                             </li>
                             <li>
                                 <Link to="/list" onClick={()=>setOpen((prev)=>!prev)} className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
-                                    <img className="w-10 bg-gray-300 dark:bg-gray-700 p-1 rounded-full shadow" src="/images/handsFree logo.svg" alt="laptop" />
+                                    <img className="w-10 bg-gray-300 dark:bg-gray-700 p-1 rounded-full shadow" src="images/handsFree logo.svg" alt="laptop" />
                                     <h3 className="text-[18px] dark:text-gray-300">هندزفری و هدفون</h3>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -288,7 +288,7 @@ useEffect(() => {
                             </li>
                             <li>
                                 <Link to="/list" onClick={()=>setOpen((prev)=>!prev)} className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
-                                    <img className="w-10 bg-gray-300 dark:bg-gray-700 p-1 rounded-full shadow" src="/images/handWatch logo.svg" alt="laptop" />
+                                    <img className="w-10 bg-gray-300 dark:bg-gray-700 p-1 rounded-full shadow" src="images/handWatch logo.svg" alt="laptop" />
                                     <h3 className="text-[18px] dark:text-gray-300">ساعت هوشمند</h3>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -298,7 +298,7 @@ useEffect(() => {
                             {[...Array(10)].map((x,i)=>(
                             <li key={i}>
                                 <Link to="/list" onClick={()=>setOpen((prev)=>!prev)} className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
-                                    <img className="w-10 bg-gray-300 dark:bg-gray-700 p-1 rounded-full shadow" src="/images/laptop logo.svg" alt="laptop" />
+                                    <img className="w-10 bg-gray-300 dark:bg-gray-700 p-1 rounded-full shadow" src="images/laptop logo.svg" alt="laptop" />
                                     <h3 className="text-[18px] dark:text-gray-300">لپتاپ</h3>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
