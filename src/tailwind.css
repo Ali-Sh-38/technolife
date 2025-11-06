@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+/* @plugin "daisyui"; */
+
+::-webkit-scrollbar {
+  width: 0px; /* ضخامت */
+}
+
+
+
