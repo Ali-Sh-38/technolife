@@ -24,9 +24,9 @@ const Footer =()=>{
                 {/* logo */}
                 <section className="dark:text-gray-300 border-b border-blue-950 dark:border-white py-5">
                     {mod ? 
-                    <Link to="/"><img className="w-40" src="/images/logo.svg" alt="technoLife" /></Link>
+                    <Link to="/"><img className="w-40" src="images/logo.svg" alt="technoLife" /></Link>
                     :
-                    <Link to="/"><img className="w-40" src="/images/white_logo.svg" alt="technoLife" /></Link>
+                    <Link to="/"><img className="w-40" src="images/white_logo.svg" alt="technoLife" /></Link>
                     }
                 </section>
                 {/* list */}
@@ -95,16 +95,16 @@ const Footer =()=>{
                 {/* other */}
                 <section className="flex flex-col md:flex-row justify-between items-center md:border-t border-blue-950 dark:border-white w-full">
                     <section className="flex justify-center gap-5 md:border-0 border-t border-blue-950 dark:border-white py-10 p-1">
-                        <a href="#"><img className="md:w-50 w-30" src="/images/techno gold.webp" alt="" /></a>
-                        <a href="#"><img className="md:w-50 w-30" src="/images/techno gold.webp" alt="" /></a>
-                        <a href="#"><img className="md:w-50 w-30" src="/images/techno gold.webp" alt="" /></a>
+                        <a href="#"><img className="md:w-50 w-30" src="images/techno gold.webp" alt="" /></a>
+                        <a href="#"><img className="md:w-50 w-30" src="images/techno gold.webp" alt="" /></a>
+                        <a href="#"><img className="md:w-50 w-30" src="images/techno gold.webp" alt="" /></a>
                     </section>
                     <section className="flex md:justify-end justify-center gap-5 md:border-0 border-t border-blue-950 dark:border-white py-10 p-1 w-full">
-                        <a href="#"><img className="w-15 bg-white rounded-md p-1" src="/images/namad.png" alt="" /></a>
-                        <a href="#"><img className="w-15 bg-white rounded-md p-1" src="/images/namad.png" alt="" /></a>
-                        <a href="#"><img className="w-15 bg-white rounded-md p-1" src="/images/namad.png" alt="" /></a>
-                        <a href="#"><img className="w-15 bg-white rounded-md p-1" src="/images/namad.png" alt="" /></a>
-                        <a href="#"><img className="w-15 bg-white rounded-md p-1" src="/images/namad.png" alt="" /></a>
+                        <a href="#"><img className="w-15 bg-white rounded-md p-1" src="images/namad.png" alt="" /></a>
+                        <a href="#"><img className="w-15 bg-white rounded-md p-1" src="images/namad.png" alt="" /></a>
+                        <a href="#"><img className="w-15 bg-white rounded-md p-1" src="images/namad.png" alt="" /></a>
+                        <a href="#"><img className="w-15 bg-white rounded-md p-1" src="images/namad.png" alt="" /></a>
+                        <a href="#"><img className="w-15 bg-white rounded-md p-1" src="images/namad.png" alt="" /></a>
                     </section>
                 </section>
             </div>

@@ -26,7 +26,7 @@ const Login = ()=>{
     return(
     <React.Fragment>
         <div className="w-1/3 mx-auto mt-15 flex flex-col items-center dark:text-gray-300">
-            <Link to="/"><img className="w-40 hover:" src={mod ? "/images/logo.svg" : "/images/white_logo.svg"} alt="logo" /></Link>
+            <Link to="/"><img className="w-40 hover:" src={mod ? "images/logo.svg" : "images/white_logo.svg"} alt="logo" /></Link>
             <p className="flex whitespace-nowrap gap-5 text-[22px] mt-10">
                 <span>ورود</span>
                 <span>|</span>
