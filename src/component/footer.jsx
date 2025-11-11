@@ -24,19 +24,19 @@ const Footer =()=>{
                 {/* logo */}
                 <section className="dark:text-gray-300 border-b border-blue-950 dark:border-white py-5">
                     {mod ? 
-                    <Link to="/"><img className="w-40" src="images/logo.svg" alt="technoLife" /></Link>
+                    <Link to="/"><img className="w-30" src="images/logo.svg" alt="technoLife" /></Link>
                     :
-                    <Link to="/"><img className="w-40" src="images/white_logo.svg" alt="technoLife" /></Link>
+                    <Link to="/"><img className="w-30" src="images/white_logo.svg" alt="technoLife" /></Link>
                     }
                 </section>
                 {/* list */}
-                <section className="dark:text-gray-300 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-10 p-1">
+                <section className="dark:text-gray-300 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-y-10 p-1">
                     {/* 1 */}
                     <section>
-                        <h4 className="text-[20px] font-semibold mb-5">
+                        <h4 className="md:text-[20px] text-[16px] font-semibold mb-5">
                             دسترسی سریع
                         </h4>
-                        <ul className="flex flex-col gap-2 text-[16px]">
+                        <ul className="flex flex-col gap-2 md:text-[16px] text-[12px]">
                             {[...Array(5)].map((x,i)=>(
                                 <li>
                                 <Link to="/list">
@@ -48,10 +48,10 @@ const Footer =()=>{
                     </section>
                     {/* 2 */}
                     <section>
-                        <h4 className="text-[20px] font-semibold mb-5">
+                        <h4 className="md:text-[20px] text-[16px] font-semibold mb-5">
                             پرفروش ترین محصولات
                         </h4>
-                        <ul className="flex flex-col gap-2 text-[16px]">
+                        <ul className="flex flex-col gap-2 md:text-[16px] text-[12px]">
                             {[...Array(5)].map((x,i)=>(
                                 <li>
                                 <Link to="/list">
@@ -63,10 +63,10 @@ const Footer =()=>{
                     </section>
                     {/* 3 */}
                     <section>
-                        <h4 className="text-[20px] font-semibold mb-5">
+                        <h4 className="md:text-[20px] text-[16px] font-semibold mb-5">
                             درباره ما
                         </h4>
-                        <ul className="flex flex-col gap-2 text-[16px]">
+                        <ul className="flex flex-col gap-2 md:text-[16px] text-[12px]">
                             {[...Array(5)].map((x,i)=>(
                                 <li>
                                 <Link to="/list">
@@ -78,10 +78,10 @@ const Footer =()=>{
                     </section>
                     {/* 4 */}
                     <section>
-                        <h4 className="text-[20px] font-semibold mb-5">
+                        <h4 className="md:text-[20px] text-[16px] font-semibold mb-5">
                             قوانین و مقررات
                         </h4>
-                        <ul className="flex flex-col gap-2 text-[16px]">
+                        <ul className="flex flex-col gap-2 md:text-[16px] text-[12px]">
                             {[...Array(5)].map((x,i)=>(
                                 <li>
                                 <Link to="/list">

@@ -70,7 +70,7 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
         <header className="md:block hidden">
             {/* first nav*/}
             <div className="fixed w-full top-0 bg-white dark:bg-gray-900 z-110 shadow-xl shadow-blue-200 dark:shadow-blue-950">
-            <nav className="m-5 flex justify-between items-stretch gap-20">
+            <nav className="m-5 flex justify-between items-stretch lg:gap-50 gap-20">
                 <section className="flex gap-5 grow">
                     {/* logo */}
                     {mod ? 
@@ -84,7 +84,7 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
                         <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
                         <input onFocus={toggleSearchBox} onChange={handelChange} type="search" className="w-full placeholder:text-[14px] placeholder:text-gray-400 outline-none" placeholder="محصول , برند یا دسته مورد نظرتان را جستجو کنید"/>
-                        <div className={`absolute top-12 right-0 lg:w-1/2 md:w-2/3 w-full bg-white dark:bg-gray-900 rounded-md p-5 z-110 duration-300 ${showSearchBox ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-10"}`}>
+                        <div className={`absolute top-12 right-0 lg:w-1/2 md:w-full bg-white dark:bg-gray-900 rounded-md p-5 z-110 duration-300 ${showSearchBox ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-10"}`}>
                             <p className="text-[14px] text-gray-400 border-b border-blue-950 dark:border-gray-300 pb-2">جستجو برای .. {searchText}</p>
                             <div className="text-[14px] mt-5">
                                 <p>

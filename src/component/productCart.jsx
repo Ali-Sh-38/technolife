@@ -12,8 +12,9 @@ const ProductCart = ({
     return(
         <React.Fragment>
             <div className="min-h-10">
+                {/* offer */}
                 {hasDiscount ?
-                <section className="h-5 mb-2 flex justify-between text-[16px] border-b-2 border-red-800 dark:border-red-400 text-red-800 dark:text-red-400 ">
+                <section className="h-5 mb-2 flex justify-between md:text-[16px] text-[14px] border-b-2 border-red-800 dark:border-red-400 text-red-800 dark:text-red-400 ">
                     <span>تکنوآف</span>
                     <span>
                         {timeOffer}
@@ -34,20 +35,20 @@ const ProductCart = ({
                 <section className="flex justify-between items-center">
                     {/* تخفیف */}
                     {hasDiscount && 
-                    <span className="text-[14px] text-white bg-red-800  px-1 rounded-md"> 
+                    <span className="md:text-[14px] text-[12px] text-white bg-red-800  px-1 rounded-md"> 
                         {discountNumber?.toLocaleString('fa-IR')}٪
                     </span>
                     }
                     {/* قیمت */}
                     <div className="font-bold flex flex-col mr-auto">
-                        <span className="text-[18px] dark:text-gray-200">
+                        <span className="md:text-[18px] text-[14px] dark:text-gray-200">
                             {currentPrice?.toLocaleString('fa-IR')}
-                            <small> تومان</small>
+                            <small className="text-[5px]"> تومان</small>
                         </span>
                         {hasDiscount &&
-                        <span className="text-[16px] text-gray-500 line-through">
+                        <span className="md:text-[16px] text-[12px] text-gray-500 line-through">
                             {originalPrice?.toLocaleString('fa-IR')}    
-                            <small> تومان</small>
+                            <small className="text-[5px]"> تومان</small>
                         </span>
                         }
                     </div>

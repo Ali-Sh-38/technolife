@@ -48,15 +48,15 @@ const Home = ()=>{
             </SwiperSlide>
         </Slider>
         {/* slider list */}
-        <div className="my-15 md:mx-10 mx-5">
-            <Slider className="productList" slidesPerView={3.5} spaceBetween={40} breakpoints={{1280 : {slidesPerView : 7 , spaceBetween : 50} , 768 : {slidesPerView : 5 , spaceBetween : 50}}} pagination={false} navigation={false} loop={false} autoplay={false} speed={800} freeMode={true}>
+        <div className="my-15 md:mx-10 mx-2">
+            <Slider className="productList" slidesPerView={3.5} spaceBetween={20} breakpoints={{1280 : {slidesPerView : 7 , spaceBetween : 50} , 768 : {slidesPerView : 5 , spaceBetween : 50}}} pagination={false} navigation={false} loop={false} autoplay={false} speed={800} freeMode={true}>
                 {[...Array(10)].map((x,i)=>(
                 <SwiperSlide>
                     <Link to="/list" key={i} className="group">
                         <div className="aspect-square rounded-full overflow-hidden border-4 border-blue-500 group-hover:border-green-500">
                             <img src="images/tablet list.webp" alt="" className="w-full h-full object-cover p-1"/>
                         </div>
-                        <p className="md:p-5 p-2 font-semibold text-blue-500 group-hover:text-green-500">تبلت و آیپد</p>
+                        <p className="md:p-5 p-2 md:text-[20px] text-[16px] font-semibold text-blue-500 group-hover:text-green-500">تبلت و آیپد</p>
                     </Link>
                 </SwiperSlide>
                 ))}
@@ -64,15 +64,15 @@ const Home = ()=>{
             </Slider>
         </div>
         {/* slider 1 offer */}
-        <div className="my-15 md:mx-10 mx-5 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
+        <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* تکنواف */}
             <section className="flex justify-between items-center bg-red-800 text-white rounded-md p-2">
-                    <h2 className="font-semibold md:text-[20px]">
+                    <h2 className="font-semibold md:text-[20px] text-[18px]">
                         تکنو آف
                     </h2>
-                    <Link to="/list" className="flex items-center text-[18px]">
+                    <Link to="/list" className="flex items-center md:text-[18px] text-[14px]">
                         <span>نمایش همه</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-5" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="md:size-5 size-4" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
                     </Link>
@@ -100,7 +100,7 @@ const Home = ()=>{
             </section>
         </div>
         {/* simple img 1*/}
-        <div className="my-15 md:mx-10 mx-5 flex md:flex-row flex-col justify-around text-black dark:text-white md:gap-10 gap-5">
+        <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col justify-around text-black dark:text-white md:gap-10 gap-5">
             <Link to="/list/jewelery" className="rounded-xl overflow-hidden border p-5">
                 <span className="hover:scale-110 duration-500"> جواهرات - لیست واقعی</span>
             </Link>
@@ -112,15 +112,15 @@ const Home = ()=>{
             </Link>
         </div>
         {/* slider 2 */}
-        <div className="my-15 md:mx-10 mx-5 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
+        <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* head */}
             <section className="flex justify-between items-center text-blue-950 dark:text-gray-300 rounded-md">
-                    <h2 className="font-semibold text-[20px]">
+                    <h2 className="font-semibold md:text-[20px] text-[18px]">
                         پرچمداران هوشمند
                     </h2>
-                    <Link to="/list" className="flex items-center text-[18px]">
+                    <Link to="/list" className="flex items-center md:text-[18px] text-[14px]">
                         <span>نمایش همه</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-5" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="md:size-5 size-4" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
                     </Link>
@@ -147,7 +147,7 @@ const Home = ()=>{
             </section>
         </div>
         {/* simple img 2*/}
-        <div className="my-15 md:mx-10 mx-5 flex md:flex-row flex-col md:gap-10 gap-5">
+        <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/iphone 17.webp" alt="..." />
             </Link>
@@ -159,8 +159,8 @@ const Home = ()=>{
             </Link>
         </div>
         {/* list mobile */}
-        <div className="text-center my-15 md:mx-10 mx-5">
-            <h2 className="text-[22px] font-bold text-blue-950 dark:text-gray-300">
+        <div className="text-center my-15 md:mx-10 mx-2">
+            <h2 className="md:text-[22px] text-[20px] font-bold text-blue-950 dark:text-gray-300">
                 برترین های موبایل
             </h2>
             <section className="flex flex-wrap justify-center items-center gap-10 mt-5 dark:text-gray-300">
@@ -197,21 +197,21 @@ const Home = ()=>{
             </section>
         </div>
         {/* big img */}
-        <div className="my-15 md:mx-10 mx-5 md:rounded-t-full overflow-hidden">
+        <div className="my-15 md:mx-10 mx-2 md:rounded-t-full overflow-hidden">
             <Link to="/list">
                 <img className="w-full" src="images/digital clock.webp" alt="" />
             </Link>
         </div>
         {/* slider 3 */}
-        <div className="my-15 md:mx-10 mx-5 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
+        <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* head */}
             <section className="flex justify-between items-center text-blue-950 dark:text-gray-300 rounded-md">
-                    <h2 className="font-semibold text-[20px]">
+                    <h2 className="font-semibold md:text-[20px] text-[18px]">
                         لپ‌تاپ‌ها در تکنولایف
                     </h2>
-                    <Link to="/list" className="flex items-center text-[18px]">
+                    <Link to="/list" className="flex items-center md:text-[18px] text-[14px]">
                         <span>نمایش همه</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-5" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="md:size-5 size-4" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
                     </Link>
@@ -238,8 +238,8 @@ const Home = ()=>{
             </section>
         </div>
         {/* list laptop */}
-        <div className="text-center my-15 md:mx-10 mx-5">
-            <h2 className="text-[22px] font-bold text-blue-950 dark:text-gray-300">
+        <div className="text-center my-15 md:mx-10 mx-2">
+            <h2 className="md:text-[22px] text-[20px] font-bold text-blue-950 dark:text-gray-300">
                 برترین های لپ‌تاپ
             </h2>
             <section className="flex flex-wrap justify-center items-center gap-10 mt-5 dark:text-gray-300">
@@ -276,7 +276,7 @@ const Home = ()=>{
             </section>
         </div>
         {/* simple img 3*/}
-        <div className="my-15 md:mx-10 mx-5 flex md:flex-row flex-col md:gap-10 gap-5">
+        <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/salamat.webp" alt="..." />
             </Link>
@@ -285,15 +285,15 @@ const Home = ()=>{
             </Link>
         </div>
         {/* slider 4 */}
-        <div className="my-15 md:mx-10 mx-5 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
+        <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* head */}
             <section className="flex justify-between items-center text-blue-950 dark:text-gray-300 rounded-md">
-                    <h2 className="font-semibold text-[20px]">
+                    <h2 className="font-semibold md:text-[20px] text-[18px]">
                         کامپیوتر و تجهیزات
                     </h2>
-                    <Link to="/list" className="flex items-center text-[18px]">
+                    <Link to="/list" className="flex items-center md:text-[18px] text-[14px]">
                         <span>نمایش همه</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-5" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="md:size-5 size-4" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
                     </Link>
@@ -320,8 +320,8 @@ const Home = ()=>{
             </section>
         </div>
         {/* list airpod */}
-        <div className="text-center my-15 md:mx-10 mx-5">
-            <h2 className="text-[22px] font-bold text-blue-950 dark:text-gray-300">
+        <div className="text-center my-15 md:mx-10 mx-2">
+            <h2 className="md:text-[22px] text-[20px] font-bold text-blue-950 dark:text-gray-300">
                 برترین های هندزفری
             </h2>
             <section className="flex flex-wrap justify-center items-center md:gap-10 gap-5 mt-5 dark:text-gray-300">
@@ -370,7 +370,7 @@ const Home = ()=>{
             </section>
         </div>
         {/* simple img 4*/}
-        <div className="my-15 md:mx-10 mx-5 flex md:flex-row flex-col md:gap-10 gap-5">
+        <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/flashmemory.webp" alt="..." />
             </Link>
@@ -379,8 +379,8 @@ const Home = ()=>{
             </Link>
         </div>
         {/* grid product*/}
-        <div className="my-15 md:mx-10 mx-5">
-            <h2 className="text-[22px] font-bold text-blue-950 dark:text-gray-300">
+        <div className="my-15 md:mx-10 mx-2">
+            <h2 className="md:text-[22px] text-[20px] font-bold text-blue-950 dark:text-gray-300">
                 لوازم خانگی خانه و آشپزخانه
             </h2>
             <div className="grid lg:grid-cols-6 lg:grid-rows-2 md:grid-cols-4 grid-cols-3 md:gap-10 gap-5 mt-5">
@@ -396,7 +396,7 @@ const Home = ()=>{
             </div>
         </div>
         {/* simple img 5*/}
-        <div className="my-15 md:mx-10 mx-5 flex md:flex-row flex-col md:gap-10 gap-5">
+        <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/powerbank.webp" alt="..." />
             </Link>
@@ -405,15 +405,15 @@ const Home = ()=>{
             </Link>
         </div>
         {/* slider 5 */}
-        <div className="my-15 md:mx-10 mx-5 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
+        <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* head */}
             <section className="flex justify-between items-center text-blue-950 dark:text-gray-300 rounded-md">
-                    <h2 className="font-semibold text-[20px]">
+                    <h2 className="font-semibold md:text-[20px] text-[18px]">
                         لوازم جانبی منتخب   
                     </h2>
-                    <Link to="/list" className="flex items-center text-[18px]">
+                    <Link to="/list" className="flex items-center md:text-[18px] text-[14px]">
                         <span>نمایش همه</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-5" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="md:size-5 size-4" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                         </svg>
                     </Link>
@@ -443,7 +443,7 @@ const Home = ()=>{
         
         <footer>
         <hr className="text-gray-300"/>
-        <div className="md:mx-10 mx-5 my-10">
+        <div className="md:mx-10 mx-2 my-10">
         <h3 className="text-gray-600 dark:text-gray-400 text-[18px] mb-3">
             فروشگاه اینترنتی تکنولایف
         </h3>
@@ -455,7 +455,7 @@ const Home = ()=>{
             {showText ? "بستن" : " ادامه"}
         </button>
         </div>
-        <div className="md:mx-10 mx-5 my-10">
+        <div className="md:mx-10 mx-2 my-10">
         <h3 className="text-gray-600 dark:text-gray-400 text-[18px] mb-3">
             فروشگاه اینترنتی تکنولایف
         </h3>
