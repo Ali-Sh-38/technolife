@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ali-sh-38.github.io/",
+  "homepage": "https://ali-sh-38.github.io/technolife",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
