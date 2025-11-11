@@ -66,7 +66,7 @@ const Home = ()=>{
         {/* slider 1 offer */}
         <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* تکنواف */}
-            <section className="flex justify-between items-center bg-blue-500 text-white rounded-md p-2">
+            <section className="flex justify-between items-center bg-red-800 text-white rounded-md p-2">
                     <h2 className="font-semibold md:text-[20px] text-[18px]">
                         تکنو آف
                     </h2>
