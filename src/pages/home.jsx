@@ -35,16 +35,16 @@ const Home = ()=>{
         {/* big slider */}
         <Slider className="mainSlider md:m-0 mt-25" slidesPerView={1} spaceBetween={0} pagination={false} navigation={false} loop={true} autoplay={{ delay: 4000 }} speed={1000} FreeMode={false} breakpoints={{1500 : {pagination : true, navigation : true}} }>
             <SwiperSlide>
-                <img src="/images/big-slider.webp" alt="..." />
+                <img src="public/images/big-slider.webp" alt="..." />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="images/big-slider.webp" alt="..." />
+                <img src="public/images/big-slider.webp" alt="..." />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="images/big-slider.webp" alt="..." />
+                <img src="public/images/big-slider.webp" alt="..." />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="images/big-slider.webp" alt="..." />
+                <img src="public/images/big-slider.webp" alt="..." />
             </SwiperSlide>
         </Slider>
         {/* slider list */}
@@ -54,7 +54,7 @@ const Home = ()=>{
                 <SwiperSlide>
                     <Link to="/list" key={i} className="group">
                         <div className="aspect-square rounded-full overflow-hidden border-4 border-blue-500 group-hover:border-green-500">
-                            <img src="/images/tablet list.webp" alt="" className="w-full h-full object-cover p-1"/>
+                            <img src="public/images/tablet list.webp" alt="" className="w-full h-full object-cover p-1"/>
                         </div>
                         <p className="md:p-5 p-2 md:text-[20px] text-[16px] font-semibold text-blue-500 group-hover:text-green-500">تبلت و آیپد</p>
                     </Link>
@@ -149,13 +149,13 @@ const Home = ()=>{
         {/* simple img 2*/}
         <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
-                <img className="hover:scale-110 duration-500" src="images/iphone 17.webp" alt="..." />
+                <img className="hover:scale-110 duration-500" src="public/images/iphone 17.webp" alt="..." />
             </Link>
             <Link to="/list" className="rounded-xl overflow-hidden">
-                <img className="hover:scale-110 duration-500" src="images/iphone 17.webp" alt="..." />
+                <img className="hover:scale-110 duration-500" src="public/images/iphone 17.webp" alt="..." />
             </Link>
             <Link to="/list" className="rounded-xl overflow-hidden">
-                <img className="hover:scale-110 duration-500" src="images/iphone 17.webp" alt="..." />
+                <img className="hover:scale-110 duration-500" src="public/images/iphone 17.webp" alt="..." />
             </Link>
         </div>
         {/* list mobile */}
@@ -165,31 +165,31 @@ const Home = ()=>{
             </h2>
             <section className="flex flex-wrap justify-center items-center gap-10 mt-5 dark:text-gray-300">
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         سامسونگ
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         سامسونگ
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         سامسونگ
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         سامسونگ
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         سامسونگ
                     </p>
@@ -199,7 +199,7 @@ const Home = ()=>{
         {/* big img */}
         <div className="my-15 md:mx-10 mx-2 md:rounded-t-full overflow-hidden">
             <Link to="/list">
-                <img className="w-full" src="images/digital clock.webp" alt="" />
+                <img className="w-full" src="public/images/digital clock.webp" alt="" />
             </Link>
         </div>
         {/* slider 3 */}
@@ -244,31 +244,31 @@ const Home = ()=>{
             </h2>
             <section className="flex flex-wrap justify-center items-center gap-10 mt-5 dark:text-gray-300">
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
@@ -278,10 +278,10 @@ const Home = ()=>{
         {/* simple img 3*/}
         <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
-                <img className="hover:scale-110 duration-500" src="images/salamat.webp" alt="..." />
+                <img className="hover:scale-110 duration-500" src="public/images/salamat.webp" alt="..." />
             </Link>
             <Link to="/list" className="rounded-xl overflow-hidden">
-                <img className="hover:scale-110 duration-500" src="images/salamat.webp" alt="..." />
+                <img className="hover:scale-110 duration-500" src="public/images/salamat.webp" alt="..." />
             </Link>
         </div>
         {/* slider 4 */}
@@ -326,43 +326,43 @@ const Home = ()=>{
             </h2>
             <section className="flex flex-wrap justify-center items-center md:gap-10 gap-5 mt-5 dark:text-gray-300">
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
                 <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
-                    <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
+                    <img src="public/images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
@@ -372,10 +372,10 @@ const Home = ()=>{
         {/* simple img 4*/}
         <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
-                <img className="hover:scale-110 duration-500" src="images/flashmemory.webp" alt="..." />
+                <img className="hover:scale-110 duration-500" src="public/images/flashmemory.webp" alt="..." />
             </Link>
             <Link to="/list" className="rounded-xl overflow-hidden">
-                <img className="hover:scale-110 duration-500" src="images/flashmemory.webp" alt="..." />
+                <img className="hover:scale-110 duration-500" src="public/images/flashmemory.webp" alt="..." />
             </Link>
         </div>
         {/* grid product*/}
@@ -387,7 +387,7 @@ const Home = ()=>{
                 
                 {[...Array(12)].map((i)=>(
                 <Link key={i} to="/list" className="relative group rounded-xl overflow-hidden">
-                    <img className="w-full mx-auto hover:scale-110 duration-300" src="images/machinwash.webp" alt="" />
+                    <img className="w-full mx-auto hover:scale-110 duration-300" src="public/images/machinwash.webp" alt="" />
                     <p className="absolute right-0 w-full md:translate-y-5 group-hover:-translate-y-10 -translate-y-10 duration-300 p-2 text-white bg-black/50 z-20">
                         لباسشویی
                     </p>
@@ -398,10 +398,10 @@ const Home = ()=>{
         {/* simple img 5*/}
         <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
-                <img className="hover:scale-110 duration-500" src="images/powerbank.webp" alt="..." />
+                <img className="hover:scale-110 duration-500" src="public/images/powerbank.webp" alt="..." />
             </Link>
             <Link to="/list" className="rounded-xl overflow-hidden">
-                <img className="hover:scale-110 duration-500" src="images/powerbank.webp" alt="..." />
+                <img className="hover:scale-110 duration-500" src="public/images/powerbank.webp" alt="..." />
             </Link>
         </div>
         {/* slider 5 */}
