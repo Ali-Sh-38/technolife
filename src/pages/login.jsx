@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import "images/logo.svg"
 
 const Login = ()=>{
     let location = useLocation()
