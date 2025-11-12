@@ -74,9 +74,9 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
                 <section className="flex gap-5 grow">
                     {/* logo */}
                     {mod ? 
-                    <Link to="/technolife"><img className="min-w-25" src="/images/logo.svg" alt="technoLife" /></Link>
+                    <Link to="/technolife"><img className="min-w-25" src="images/logo.svg" alt="technoLife" /></Link>
                     :
-                    <Link to="/technolife"><img className="min-w-25" src="/images/white_logo.svg" alt="technoLife" /></Link>
+                    <Link to="/technolife"><img className="min-w-25" src="images/white_logo.svg" alt="technoLife" /></Link>
                     }
                     {/* search box */}
                     <div ref={searchRef} className="relative w-full flex gap-5 items-center px-5 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-400 duration-300">
@@ -166,9 +166,9 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
                 {/* logo */}
                 <section className="absolute right-1/2 translate-x-1/2 w-25">
                     {mod ? 
-                    <Link to="/technolife"><img src="/images/logo.svg" alt="technoLife" /></Link>
+                    <Link to="/technolife"><img src="images/logo.svg" alt="technoLife" /></Link>
                     :
-                    <Link to="/technolife"><img src="/images/white_logo.svg" alt="technoLife" /></Link>
+                    <Link to="/technolife"><img src="images/white_logo.svg" alt="technoLife" /></Link>
                     }
                 </section>
                 {/* menu */}
