@@ -35,7 +35,7 @@ const Home = ()=>{
         {/* big slider */}
         <Slider className="mainSlider md:m-0 mt-25" slidesPerView={1} spaceBetween={0} pagination={false} navigation={false} loop={true} autoplay={{ delay: 4000 }} speed={1000} FreeMode={false} breakpoints={{1500 : {pagination : true, navigation : true}} }>
             <SwiperSlide>
-                <img src="images/big-slider.webp" alt="..." />
+                <img src="/images/big-slider.webp" alt="..." />
             </SwiperSlide>
             <SwiperSlide>
                 <img src="images/big-slider.webp" alt="..." />
