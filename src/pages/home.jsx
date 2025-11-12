@@ -54,7 +54,7 @@ const Home = ()=>{
                 <SwiperSlide>
                     <Link to="/list" key={i} className="group">
                         <div className="aspect-square rounded-full overflow-hidden border-4 border-blue-500 group-hover:border-green-500">
-                            <img src="images/tablet list.webp" alt="" className="w-full h-full object-cover p-1"/>
+                            <img src="/images/tablet list.webp" alt="" className="w-full h-full object-cover p-1"/>
                         </div>
                         <p className="md:p-5 p-2 md:text-[20px] text-[16px] font-semibold text-blue-500 group-hover:text-green-500">تبلت و آیپد</p>
                     </Link>
