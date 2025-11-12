@@ -179,6 +179,12 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
                 </button>
                 {/* cart && search */}
                 <section className="flex items-center gap-2">
+                    {/* search */}
+                    <button onClick={()=>setShowSearchBoxMoble((prev)=>!prev)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-10 p-2 border-2 border-blue-950 dark:border-gray-200 text-blue-950 dark:text-gray-200 rounded-full duration-300" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
                     {/* cart */}
                     <Link to="/cart" className="relative p-2 border-2 border-blue-950 dark:border-gray-200 text-blue-950 dark:text-gray-200 rounded-full duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-5" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
@@ -188,12 +194,6 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
                             {(getTotalCount()).toLocaleString("fa-IR")}
                         </span>
                     </Link>
-                    {/* search */}
-                    <button onClick={()=>setShowSearchBoxMoble((prev)=>!prev)}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-10 p-2 border-2 border-blue-950 dark:border-gray-200 text-blue-950 dark:text-gray-200 rounded-full duration-300" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                        </svg>
-                    </button>
                 </section>
             </nav>
         </header>

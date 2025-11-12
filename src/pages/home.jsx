@@ -48,7 +48,7 @@ const Home = ()=>{
             </SwiperSlide>
         </Slider>
         {/* slider list */}
-        <div className="my-15 md:mx-10 mx-2">
+        <div className="my-15 md:mx-10 mx-4">
             <Slider className="productList" slidesPerView={3.5} spaceBetween={20} breakpoints={{1280 : {slidesPerView : 7 , spaceBetween : 50} , 768 : {slidesPerView : 5 , spaceBetween : 50}}} pagination={false} navigation={false} loop={false} autoplay={false} speed={800} freeMode={true}>
                 {[...Array(10)].map((x,i)=>(
                 <SwiperSlide>
@@ -64,7 +64,7 @@ const Home = ()=>{
             </Slider>
         </div>
         {/* slider 1 offer */}
-        <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
+        <div className="my-15 md:mx-10 mx-4 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* تکنواف */}
             <section className="flex justify-between items-center bg-red-800 text-white rounded-md p-2">
                     <h2 className="font-semibold md:text-[20px] text-[18px]">
@@ -100,7 +100,7 @@ const Home = ()=>{
             </section>
         </div>
         {/* simple img 1*/}
-        <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col justify-around text-black dark:text-white md:gap-10 gap-5">
+        <div className="my-15 md:mx-10 mx-4 flex md:flex-row flex-col justify-around text-black dark:text-white md:gap-10 gap-5">
             <Link to="/list/jewelery" className="rounded-xl overflow-hidden border p-5">
                 <span className="hover:scale-110 duration-500"> جواهرات - لیست واقعی</span>
             </Link>
@@ -112,7 +112,7 @@ const Home = ()=>{
             </Link>
         </div>
         {/* slider 2 */}
-        <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
+        <div className="my-15 md:mx-10 mx-4 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* head */}
             <section className="flex justify-between items-center text-blue-950 dark:text-gray-300 rounded-md">
                     <h2 className="font-semibold md:text-[20px] text-[18px]">
@@ -147,7 +147,7 @@ const Home = ()=>{
             </section>
         </div>
         {/* simple img 2*/}
-        <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
+        <div className="my-15 md:mx-10 mx-4 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/iphone 17.webp" alt="..." />
             </Link>
@@ -159,7 +159,7 @@ const Home = ()=>{
             </Link>
         </div>
         {/* list mobile */}
-        <div className="text-center my-15 md:mx-10 mx-2">
+        <div className="text-center my-15 md:mx-10 mx-4">
             <h2 className="md:text-[22px] text-[20px] font-bold text-blue-950 dark:text-gray-300">
                 برترین های موبایل
             </h2>
@@ -197,13 +197,13 @@ const Home = ()=>{
             </section>
         </div>
         {/* big img */}
-        <div className="my-15 md:mx-10 mx-2 md:rounded-t-full overflow-hidden">
+        <div className="my-15 md:mx-10 mx-0 md:rounded-t-full overflow-hidden">
             <Link to="/list">
                 <img className="w-full" src="images/digital clock.webp" alt="" />
             </Link>
         </div>
         {/* slider 3 */}
-        <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
+        <div className="my-15 md:mx-10 mx-4 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* head */}
             <section className="flex justify-between items-center text-blue-950 dark:text-gray-300 rounded-md">
                     <h2 className="font-semibold md:text-[20px] text-[18px]">
@@ -238,7 +238,7 @@ const Home = ()=>{
             </section>
         </div>
         {/* list laptop */}
-        <div className="text-center my-15 md:mx-10 mx-2">
+        <div className="text-center my-15 md:mx-10 mx-4">
             <h2 className="md:text-[22px] text-[20px] font-bold text-blue-950 dark:text-gray-300">
                 برترین های لپ‌تاپ
             </h2>
@@ -276,7 +276,7 @@ const Home = ()=>{
             </section>
         </div>
         {/* simple img 3*/}
-        <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
+        <div className="my-15 md:mx-10 mx-4 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/salamat.webp" alt="..." />
             </Link>
@@ -285,7 +285,7 @@ const Home = ()=>{
             </Link>
         </div>
         {/* slider 4 */}
-        <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
+        <div className="my-15 md:mx-10 mx-4 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* head */}
             <section className="flex justify-between items-center text-blue-950 dark:text-gray-300 rounded-md">
                     <h2 className="font-semibold md:text-[20px] text-[18px]">
@@ -320,7 +320,7 @@ const Home = ()=>{
             </section>
         </div>
         {/* list airpod */}
-        <div className="text-center my-15 md:mx-10 mx-2">
+        <div className="text-center my-15 md:mx-10 mx-4">
             <h2 className="md:text-[22px] text-[20px] font-bold text-blue-950 dark:text-gray-300">
                 برترین های هندزفری
             </h2>
@@ -370,7 +370,7 @@ const Home = ()=>{
             </section>
         </div>
         {/* simple img 4*/}
-        <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
+        <div className="my-15 md:mx-10 mx-4 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/flashmemory.webp" alt="..." />
             </Link>
@@ -379,7 +379,7 @@ const Home = ()=>{
             </Link>
         </div>
         {/* grid product*/}
-        <div className="my-15 md:mx-10 mx-2">
+        <div className="my-15 md:mx-10 mx-4">
             <h2 className="md:text-[22px] text-[20px] font-bold text-blue-950 dark:text-gray-300">
                 لوازم خانگی خانه و آشپزخانه
             </h2>
@@ -396,7 +396,7 @@ const Home = ()=>{
             </div>
         </div>
         {/* simple img 5*/}
-        <div className="my-15 md:mx-10 mx-2 flex md:flex-row flex-col md:gap-10 gap-5">
+        <div className="my-15 md:mx-10 mx-4 flex md:flex-row flex-col md:gap-10 gap-5">
             <Link to="/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/powerbank.webp" alt="..." />
             </Link>
@@ -405,7 +405,7 @@ const Home = ()=>{
             </Link>
         </div>
         {/* slider 5 */}
-        <div className="my-15 md:mx-10 mx-2 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
+        <div className="my-15 md:mx-10 mx-4 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
             {/* head */}
             <section className="flex justify-between items-center text-blue-950 dark:text-gray-300 rounded-md">
                     <h2 className="font-semibold md:text-[20px] text-[18px]">
@@ -441,33 +441,33 @@ const Home = ()=>{
         </div>
 
         
+        <hr className="text-gray-300 dark:text-gray-700"/>
         <footer>
-        <hr className="text-gray-300"/>
-        <div className="md:mx-10 mx-2 my-10">
-        <h3 className="text-gray-600 dark:text-gray-400 text-[18px] mb-3">
-            فروشگاه اینترنتی تکنولایف
-        </h3>
-        <p className={`text-gray-500 text-[14px] ${showText ? "" : "line-clamp-3"} `}>
-            فروشگاه اینترنتی تکنولایف سال‌ها است که به‌عنوان بزرگترین فروشگاه کالای دیجیتال مشغول فعالیت است. از آن‌جا که خرید اینترنتی همواره موجی از بی‌اعتمادی و شک را با خود به‌همراه داشته، نماد الکترونیکی می‌تواند خیال خیلی از افراد را راحت کند. تکنولایف با داشتن نماد اعتماد الکترونیکی و عضویت در سازمان صنفی رایانه‌ای کشور، همچنین عضویت در انجمن صنفی فروشگاه‌های اینترنتی، فضای ایمن برای خرید آنلاین را برای مشتریان خود ایجاد کرده است.
-            شما می‌توانید خرید کالای دیجیتال مانند خرید لپ تاپ ، گوشی موبایل در مدل‌ها و برندهای مختلف، لوازم جانبی موبایل ، هدفون، و کلیه لوازم دیجیتال مدنظر خود را با بهترین قیمت، در فروشگاه تکنولایف به ثبت برسانید.
-        </p>
-        <button onClick={setShowText} className="bg-gray-200 dark:bg-gray-800 text-[16px] text-gray-500 px-1 rounded-sm">
-            {showText ? "بستن" : " ادامه"}
-        </button>
-        </div>
-        <div className="md:mx-10 mx-2 my-10">
-        <h3 className="text-gray-600 dark:text-gray-400 text-[18px] mb-3">
-            فروشگاه اینترنتی تکنولایف
-        </h3>
-        <p className={`text-gray-500 text-[14px] ${showText2 ? "" : "line-clamp-3"} `}>
-            فروشگاه اینترنتی تکنولایف سال‌ها است که به‌عنوان بزرگترین فروشگاه کالای دیجیتال مشغول فعالیت است. از آن‌جا که خرید اینترنتی همواره موجی از بی‌اعتمادی و شک را با خود به‌همراه داشته، نماد الکترونیکی می‌تواند خیال خیلی از افراد را راحت کند. تکنولایف با داشتن نماد اعتماد الکترونیکی و عضویت در سازمان صنفی رایانه‌ای کشور، همچنین عضویت در انجمن صنفی فروشگاه‌های اینترنتی، فضای ایمن برای خرید آنلاین را برای مشتریان خود ایجاد کرده است.
-            فروشگاه اینترنتی تکنولایف سال‌ها است که به‌عنوان بزرگترین فروشگاه کالای دیجیتال مشغول فعالیت است. از آن‌جا که خرید اینترنتی همواره موجی از بی‌اعتمادی و شک را با خود به‌همراه داشته، نماد الکترونیکی می‌تواند خیال خیلی از افراد را راحت کند. تکنولایف با داشتن نماد اعتماد الکترونیکی و عضویت در سازمان صنفی رایانه‌ای کشور، همچنین عضویت در انجمن صنفی فروشگاه‌های اینترنتی، فضای ایمن برای خرید آنلاین را برای مشتریان خود ایجاد کرده است.
-            شما می‌توانید خرید کالای دیجیتال مانند خرید لپ تاپ ، گوشی موبایل در مدل‌ها و برندهای مختلف، لوازم جانبی موبایل ، هدفون، و کلیه لوازم دیجیتال مدنظر خود را با بهترین قیمت، در فروشگاه تکنولایف به ثبت برسانید.
-        </p>
-        <button onClick={setShowText2} className="bg-gray-200 dark:bg-gray-800 text-[16px] text-gray-500 px-1 rounded-sm">
-            {showText2 ? "بستن" : " ادامه"}
-        </button>
-        </div>
+            <div className="md:mx-10 mx-4 my-10">
+            <h3 className="text-gray-600 dark:text-gray-400 md:text-[18px] text-[16px] mb-3">
+                فروشگاه اینترنتی تکنولایف
+            </h3>
+            <p className={`text-gray-500 md:text-[14px] text-[12px] ${showText ? "" : "line-clamp-3"} `}>
+                فروشگاه اینترنتی تکنولایف سال‌ها است که به‌عنوان بزرگترین فروشگاه کالای دیجیتال مشغول فعالیت است. از آن‌جا که خرید اینترنتی همواره موجی از بی‌اعتمادی و شک را با خود به‌همراه داشته، نماد الکترونیکی می‌تواند خیال خیلی از افراد را راحت کند. تکنولایف با داشتن نماد اعتماد الکترونیکی و عضویت در سازمان صنفی رایانه‌ای کشور، همچنین عضویت در انجمن صنفی فروشگاه‌های اینترنتی، فضای ایمن برای خرید آنلاین را برای مشتریان خود ایجاد کرده است.
+                شما می‌توانید خرید کالای دیجیتال مانند خرید لپ تاپ ، گوشی موبایل در مدل‌ها و برندهای مختلف، لوازم جانبی موبایل ، هدفون، و کلیه لوازم دیجیتال مدنظر خود را با بهترین قیمت، در فروشگاه تکنولایف به ثبت برسانید.
+            </p>
+            <button onClick={setShowText} className="bg-gray-200 dark:bg-gray-800 text-[16px] text-gray-500 px-1 rounded-sm">
+                {showText ? "بستن" : " ادامه"}
+            </button>
+            </div>
+            <div className="md:mx-10 mx-4 my-10">
+            <h3 className="text-gray-600 dark:text-gray-400 md:text-[18px] text-[16px] mb-3">
+                فروشگاه اینترنتی تکنولایف
+            </h3>
+            <p className={`text-gray-500 md:text-[14px] text-[12px] ${showText2 ? "" : "line-clamp-3"} `}>
+                فروشگاه اینترنتی تکنولایف سال‌ها است که به‌عنوان بزرگترین فروشگاه کالای دیجیتال مشغول فعالیت است. از آن‌جا که خرید اینترنتی همواره موجی از بی‌اعتمادی و شک را با خود به‌همراه داشته، نماد الکترونیکی می‌تواند خیال خیلی از افراد را راحت کند. تکنولایف با داشتن نماد اعتماد الکترونیکی و عضویت در سازمان صنفی رایانه‌ای کشور، همچنین عضویت در انجمن صنفی فروشگاه‌های اینترنتی، فضای ایمن برای خرید آنلاین را برای مشتریان خود ایجاد کرده است.
+                فروشگاه اینترنتی تکنولایف سال‌ها است که به‌عنوان بزرگترین فروشگاه کالای دیجیتال مشغول فعالیت است. از آن‌جا که خرید اینترنتی همواره موجی از بی‌اعتمادی و شک را با خود به‌همراه داشته، نماد الکترونیکی می‌تواند خیال خیلی از افراد را راحت کند. تکنولایف با داشتن نماد اعتماد الکترونیکی و عضویت در سازمان صنفی رایانه‌ای کشور، همچنین عضویت در انجمن صنفی فروشگاه‌های اینترنتی، فضای ایمن برای خرید آنلاین را برای مشتریان خود ایجاد کرده است.
+                شما می‌توانید خرید کالای دیجیتال مانند خرید لپ تاپ ، گوشی موبایل در مدل‌ها و برندهای مختلف، لوازم جانبی موبایل ، هدفون، و کلیه لوازم دیجیتال مدنظر خود را با بهترین قیمت، در فروشگاه تکنولایف به ثبت برسانید.
+            </p>
+            <button onClick={setShowText2} className="bg-gray-200 dark:bg-gray-800 text-[16px] text-gray-500 px-1 rounded-sm">
+                {showText2 ? "بستن" : " ادامه"}
+            </button>
+            </div>
         </footer>
         <SearchBoxMoble/>
     </React.Fragment>
