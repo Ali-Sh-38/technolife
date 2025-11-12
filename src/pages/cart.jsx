@@ -7,8 +7,7 @@ const Cart = ()=>{
     
     return(
     <React.Fragment>
-        <div className="h-screen">
-        <div className="relative md:mx-10 mx-5 md:my-5 mt-25 flex md:flex-row flex-col gap-10">
+        <div className="relative md:mx-10 mx-5 md:my-5 my-25 flex md:flex-row flex-col gap-10">
             {/* product */}
             <div className="flex-3">
                 <h1 className="text-[18px] dark:text-gray-200 p-1">
@@ -126,7 +125,6 @@ const Cart = ()=>{
                     </button>
                 </div>
             </div>
-        </div>
         </div>
     </React.Fragment>
     )
