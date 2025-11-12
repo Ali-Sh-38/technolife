@@ -24,9 +24,9 @@ const Footer =()=>{
                 {/* logo */}
                 <section className="dark:text-gray-300 border-b border-blue-950 dark:border-white py-5">
                     {mod ? 
-                    <Link to="/"><img className="w-30" src="images/logo.svg" alt="technoLife" /></Link>
+                    <Link to="/"><img className="w-30" src="/images/logo.svg" alt="technoLife" /></Link>
                     :
-                    <Link to="/"><img className="w-30" src="images/white_logo.svg" alt="technoLife" /></Link>
+                    <Link to="/"><img className="w-30" src="/images/white_logo.svg" alt="technoLife" /></Link>
                     }
                 </section>
                 {/* list */}

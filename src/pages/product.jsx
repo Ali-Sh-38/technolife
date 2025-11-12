@@ -372,7 +372,7 @@ const Product = ()=>{
             <div className="flex justify-center items-center gap-10 mt-10">
                 {[...Array(4)].map((x,i2)=>(
                 <section key={i2} className="flex flex-col items-center">
-                    <img className="md:w-15 w-10" src="images/zemanat.svg" alt="" />
+                    <img className="md:w-15 w-10" src="/images/zemanat.svg" alt="" />
                     <p className="text-gray-500 md:text-[14px] text-[10px] text-center">۷ روز ضمانت برگشت کالا</p>
                 </section>
                 ))}
