@@ -152,12 +152,12 @@ const Product = ()=>{
                             zoomSrc={product.image}
                             zoomType="hover"
                         />
+                        {/* other images */}
                         <div className="flex justify-center gap-2 h-20">
-                            {/* other images */}
                             {[...Array(4)].map((i)=>(
                                 <div key={i} onClick={() => setFullImage(product.image)}
                                 className="w-20 aspect-square cursor-pointer rounded-md overflow-hidden border-2 border-blue-400 hover:border-blue-700 p-1">
-                                <img src={product.image} className="w-full h-full object-cover" />
+                                <img src={product.image} className="w-full h-full object-contain!" />
                                 </div>
                             ))}
                             {/* full screen */}

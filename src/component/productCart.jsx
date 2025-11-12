@@ -25,7 +25,7 @@ const ProductCart = ({
                 }
                 {/* img */}
                 <section className="aspect-square">
-                    <img src={image} alt="" className="w-full h-full object-cover"/>
+                    <img src={image} alt="" className="w-full h-full object-contain!"/>
                 </section>
                 {/* title */}
                 <h3 className="text-[14px] h-12 overflow-scroll dark:text-gray-200 my-2">

@@ -136,7 +136,7 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
             </nav>
             </div>
             {/* second nav */}
-            <nav className="mt-25 border-b border-gray-300 dark:border-gray-700 relative pb-2 z-100 flex justify-between items-center duration-300">
+            <nav className="mt-25 border-b border-gray-300 dark:border-gray-700 relative pb-2 z-100 flex items-center duration-300">
                 {/* منو اصلی */}
                     <Sidebar open={showSidebar} setOpen={toggleSidebar}/>
                     <button onClick={toggleSidebar} className={`mx-5 flex items-center gap-2 p-2 text-[16px] text-blue-950 dark:text-gray-200 cursor-pointer w-max z-500 rounded-md relative after:absolute after:right-1/2 after:translate-x-1/2 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-950 dark:after:bg-gray-300 after:transition-all after:duration-300 hover:after:w-full ${showSidebar ? "after:w-full text-white dark:text-gray-300"  : ""}`}>
@@ -145,6 +145,21 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
                         </svg>
                         <span>
                             دسته بندی محصولات
+                        </span>
+                    </button>
+                    <button className={`mx-5 flex items-center gap-2 p-2 text-[16px] text-blue-950 dark:text-gray-200 cursor-pointer w-max z-500 rounded-md relative after:absolute after:right-1/2 after:translate-x-1/2 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-950 dark:after:bg-gray-300 after:transition-all after:duration-300 hover:after:w-full after:text-white}`}>
+                        <span>
+                            صفحه ۱
+                        </span>
+                    </button>
+                    <button className={`mx-5 flex items-center gap-2 p-2 text-[16px] text-blue-950 dark:text-gray-200 cursor-pointer w-max z-500 rounded-md relative after:absolute after:right-1/2 after:translate-x-1/2 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-950 dark:after:bg-gray-300 after:transition-all after:duration-300 hover:after:w-full after:text-white}`}>
+                        <span>
+                            صفحه ۲
+                        </span>
+                    </button>
+                    <button className={`mx-5 flex items-center gap-2 p-2 text-[16px] text-blue-950 dark:text-gray-200 cursor-pointer w-max z-500 rounded-md relative after:absolute after:right-1/2 after:translate-x-1/2 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-950 dark:after:bg-gray-300 after:transition-all after:duration-300 hover:after:w-full after:text-white}`}>
+                        <span>
+                            صفحه ۳
                         </span>
                     </button>
                     
@@ -190,9 +205,11 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-5" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                         </svg>
+                        {getTotalCount() > 0 &&
                         <span className="absolute -bottom-1 -right-1 bg-red-700 text-white text-[10px] rounded-full px-2">
                             {(getTotalCount()).toLocaleString("fa-IR")}
                         </span>
+                        }
                     </Link>
                 </section>
             </nav>

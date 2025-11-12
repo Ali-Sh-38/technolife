@@ -256,6 +256,14 @@ useEffect(() => {
                             <span>ورود</span> <span>|</span> <span>ثبت نام</span>
                         </Link>
                     </section>
+                    <section className="my-5 pb-5 border-b-2 border-blue-950 dark:border-gray-200">
+                        <div className="flex flex-col gap-5 text-center text-blue-950 dark:text-gray-300 text-[20px]">
+                            <Link className="bg-black/10 p-1 rounded-md">صفحه ۱</Link>
+                            <Link className="bg-black/10 p-1 rounded-md">صفحه ۲</Link>
+                            <Link className="bg-black/10 p-1 rounded-md">صفحه ۳</Link>
+                        </div>
+                    </section>
+
                     {/* list */}
                     <section>
                         <ul>
