@@ -114,6 +114,9 @@ const Home = ()=>{
             <Link to="/list/women's clothing" className="rounded-xl overflow-hidden border p-5">
                 <span className="hover:scale-110 duration-500"> لباس های زنانه - لیست واقعی</span>
             </Link>
+            <Link to="/list/electronics" className="rounded-xl overflow-hidden border p-5">
+                <span className="hover:scale-110 duration-500"> لیست واقعی الکترونیکی</span>
+            </Link>
         </div>
         {/* slider 2 */}
         <div className="my-15 md:mx-10 mx-4 md:p-4 p-2 border border-gray-300 dark:border-gray-700 rounded-xl">
@@ -168,31 +171,31 @@ const Home = ()=>{
                 برترین های موبایل
             </h2>
             <section className="flex flex-wrap justify-center items-center gap-10 mt-5 dark:text-gray-300">
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         سامسونگ
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         سامسونگ
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         سامسونگ
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         سامسونگ
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/samsung.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         سامسونگ
@@ -247,31 +250,31 @@ const Home = ()=>{
                 برترین های لپ‌تاپ
             </h2>
             <section className="flex flex-wrap justify-center items-center gap-10 mt-5 dark:text-gray-300">
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
@@ -329,43 +332,43 @@ const Home = ()=>{
                 برترین های هندزفری
             </h2>
             <section className="flex flex-wrap justify-center items-center md:gap-10 gap-5 mt-5 dark:text-gray-300">
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-3/7 md:w-1/6 flex flex-col items-center">
+                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای

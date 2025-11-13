@@ -42,12 +42,12 @@ const ProductCart = ({
                     {/* قیمت */}
                     <div className="font-bold flex flex-col mr-auto">
                         <span className="md:text-[18px] text-[14px] dark:text-gray-200">
-                            {currentPrice?.toLocaleString('fa-IR')}
+                            {originalPrice?.toLocaleString('fa-IR')}
                             <small className="text-[8px]"> تومان</small>
                         </span>
                         {hasDiscount &&
                         <span className="md:text-[16px] text-[12px] text-gray-500 line-through">
-                            {originalPrice?.toLocaleString('fa-IR')}    
+                            {currentPrice?.toLocaleString('fa-IR')}    
                             <small className="text-[8px]"> تومان</small>
                         </span>
                         }

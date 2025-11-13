@@ -43,8 +43,6 @@ const Product = ()=>{
     
     const [fullImage, setFullImage] = useState(null);
 
-    const [showText3,setShowText3]=useShow()
-
 
     if (!product) return <div>در حال بارگذاری...</div>;
 
@@ -65,41 +63,46 @@ const Product = ()=>{
                       {product.title}
                     </h1>
                     {/* opinion */}
-                    <section className="text-gray-700 dark:text-gray-300 text-[16px] border-b border-gray-300 dark:border-gray-700 p-1 w-max">
+                    <section className="text-blue-500 text-[18px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
                         <a href="#a3">
                             نطرات کاربران   {}
                         </a>
                     </section>
                     {/* color */}
-                    <section className="text-gray-700 dark:text-gray-300 text-[16px] border-b border-gray-300 dark:border-gray-700 p-1 w-max">
+                    <section className="text-blue-500 text-[18px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
                         <h2>
-                            رنگ :   {}
+                            رنگ    {}
+                        </h2>
+                    </section>
+                    <section className="text-blue-500 text-[18px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
+                        <h2>
+                            تعداد    {}
                         </h2>
                     </section>
                     {/* option */}
                     <section>
-                        <h2 className="text-gray-700 dark:text-gray-300 text-[16px] mb-1">
+                        <h2 className="text-blue-500 text-[18px] mb-1">
                             ویژگی‌های اصلی
                         </h2>
                         <div className="flex flex-col gap-5 border border-gray-300 dark:border-gray-700 rounded-md p-5">
                             <section className="text-[16px] border-b border-dashed border-gray-300 dark:border-gray-700 pb-1">
-                                <span className="text-blue-500 pl-3">عنوان :</span>
+                                <span className="text-gray-600 dark:text-gray-400 pl-3">عنوان :</span>
                                 <span className="text-gray-500">{product.category}</span>
                             </section>
                             <section className="text-[16px] border-b border-dashed border-gray-300 dark:border-gray-700 pb-1">
-                                <span className="text-blue-500 pl-3">امتیاز :</span>
+                                <span className="text-gray-600 dark:text-gray-400 pl-3">امتیاز :</span>
                                 <span className="text-gray-500">{product.rating}</span>
                             </section>
                             <section className="text-[16px] border-b border-dashed border-gray-300 dark:border-gray-700 pb-1">
-                                <span className="text-blue-500 pl-3"> نعداد : </span>
+                                <span className="text-gray-600 dark:text-gray-400 pl-3"> سال تولید : </span>
                                 <span className="text-gray-500"> {} </span>
                             </section>
                             <section className="text-[16px] border-b border-dashed border-gray-300 dark:border-gray-700 pb-1">
-                                <span className="text-blue-500 pl-3">متن :</span>
-                                <span className={`text-gray-500 ${showText3 ? "" : "line-clamp-2"}`}>{product.description}</span>
-                                <button onClick={setShowText3} className="bg-gray-200 dark:bg-gray-800 text-[16px] text-gray-500 px-1 m-1 rounded-sm">
+                                <span className="text-gray-600 dark:text-gray-400 pl-3 block">توضیحات :</span>
+                                <span className={`text-gray-500 `}>{product.description}</span>
+                                {/* <button onClick={setShowText3} className="bg-gray-200 dark:bg-gray-800 text-[16px] text-gray-500 px-1 m-1 rounded-sm inline">
                                     {showText3 ? "بستن" : " ادامه"}
-                                </button>
+                                </button> */}
                             </section>
                         </div>
                     </section>
@@ -146,12 +149,13 @@ const Product = ()=>{
                     </div>
                     {/* images */}
                     <div>
-                        <InnerImageZoom
-                            className="overflow-hidden rounded-md"
-                            src={product.image} 
-                            zoomSrc={product.image}
-                            zoomType="hover"
-                        />
+                        <div className="">
+                            <InnerImageZoom
+                                className="overflow-hidden rounded-md"
+                                src={product.image} 
+                                zoomSrc={product.image}
+                                zoomType="hover" />
+                        </div>
                         {/* other images */}
                         <div className="flex justify-center gap-2 h-20">
                             {[...Array(4)].map((i)=>(
@@ -372,7 +376,7 @@ const Product = ()=>{
             <div className="flex justify-center items-center gap-10 mt-10">
                 {[...Array(4)].map((x,i2)=>(
                 <section key={i2} className="flex flex-col items-center">
-                    <img className="md:w-15 w-10" src="images/zemanat.svg" alt="" />
+                    <img className="md:w-15 w-10" src="/images/zemanat.svg" alt="" />
                     <p className="text-gray-500 md:text-[14px] text-[10px] text-center">۷ روز ضمانت برگشت کالا</p>
                 </section>
                 ))}
