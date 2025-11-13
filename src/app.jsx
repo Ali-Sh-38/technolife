@@ -23,16 +23,16 @@ const App = ()=>{
     return(
     <React.Fragment>
         <CartProvider>
-        {location.pathname !== "technolife/login" && <Nav />}
+        {location.pathname !== "/technolife/login" && <Nav />}
         <Routes>
             <Route path='/technolife' element={<Home/>}/>
-            <Route path='technolife/list?/:category' element={<List/>}/>
-            <Route path='technolife/product/:id' element={<Product/>}/>
-            <Route path='technolife/cart' element={<Cart/>}/>
-            <Route path='technolife/login' element={<Login/>}/>
-            <Route path='technolife/*' element={<Error/>}/>
+            <Route path='/technolife/list?/:category' element={<List/>}/>
+            <Route path='/technolife/product/:id' element={<Product/>}/>
+            <Route path='/technolife/cart' element={<Cart/>}/>
+            <Route path='/technolife/login' element={<Login/>}/>
+            <Route path='/technolife/*' element={<Error/>}/>
         </Routes>
-        {location.pathname !== "technolife/login" && <Footer/>}
+        {location.pathname !== "/technolife/login" && <Footer/>}
         </CartProvider>
     </React.Fragment>
     )
