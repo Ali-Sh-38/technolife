@@ -31,9 +31,9 @@ const SearchBoxMoble =({open , setOpen})=>{
                             جستجو های محبوب
                         </p>
                         <div className="flex flex-wrap gap-2 p-2 text-gray-500 dark:text-gray-300">
-                        <Link to="/list" className="text-[12px] px-2 border border-gray-400 dark:border-gray-600 rounded-full">ساعت هوشمند</Link>
-                        <Link to="/list" className="text-[12px] px-2 border border-gray-400 dark:border-gray-600 rounded-full">گوشی</Link>
-                        <Link to="/list" className="text-[12px] px-2 border border-gray-400 dark:border-gray-600 rounded-full">کابل شارژ</Link>
+                        <Link to="/technolife/list" className="text-[12px] px-2 border border-gray-400 dark:border-gray-600 rounded-full">ساعت هوشمند</Link>
+                        <Link to="/technolife/list" className="text-[12px] px-2 border border-gray-400 dark:border-gray-600 rounded-full">گوشی</Link>
+                        <Link to="/technolife/list" className="text-[12px] px-2 border border-gray-400 dark:border-gray-600 rounded-full">کابل شارژ</Link>
                         </div>
                     </div>
                 </div>

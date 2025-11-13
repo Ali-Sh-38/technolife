@@ -191,7 +191,7 @@ const List = ()=>{
                 <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-5 mt-5">
                     {filteredProducts.map((props)=>(
                         <div key={props.id} className="p-2 shadow-[0_0_10px_0_var(--tw-shadow-color)] shadow-gray-300 dark:shadow-gray-700 rounded-md">
-                            <Link to={`/product/${props.id}`}>
+                            <Link to={`/technolife/product/${props.id}`}>
                                 <ProductCart
                                 title={props.title}
                                 hasDiscount={props.hasDiscount}

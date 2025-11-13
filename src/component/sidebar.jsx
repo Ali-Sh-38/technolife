@@ -18,7 +18,7 @@ useEffect(() => {
             <div className={`md:block hidden absolute w-50 bg-white dark:bg-gray-900 top-full right-0 duration-300 ${open ? "opacity-100 visible translate-x-0" : "opacity-0 invisible translate-x-10"}`}>
                 <ul className="flex flex-col text-gray-500 dark:text-gray-200 h-100 overflow-y-scroll">
                     <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
-                        <Link to="/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
+                        <Link to="/technolife/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
                             <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/laptop logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">لپتاپ</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
@@ -31,27 +31,27 @@ useEffect(() => {
                                 <h3 className="p-1 my-4 bg-gray-100 dark:bg-gray-800 rounded-md text-center text-[15px]">لپتاپ</h3>
                                 <ul className="flex flex-col gap-3 text-[14px]">
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             ایسوس
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             مک بوک
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             اچ پی
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             لنوو
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             سرفیس
                                         </Link>
                                     </li>
@@ -60,7 +60,7 @@ useEffect(() => {
                         </div>
                     </li>
                     <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
-                        <Link to="/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
+                        <Link to="/technolife/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
                             <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/phone logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">موبایل</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
@@ -73,27 +73,27 @@ useEffect(() => {
                                 <h3 className="p-1 my-4 bg-gray-100 dark:bg-gray-800 rounded-md text-center text-[15px]">موبایل</h3>
                                 <ul className="flex flex-col gap-3 text-[14px]">
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             سامسونگ
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             آیفون
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                            شیایومی
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                            سونی
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                            هواوی
                                         </Link>
                                     </li>
@@ -102,7 +102,7 @@ useEffect(() => {
                         </div>
                     </li>
                     <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
-                        <Link to="/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
+                        <Link to="/technolife/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
                             <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/handsFree logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">هدفون و هندزفری</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
@@ -115,17 +115,17 @@ useEffect(() => {
                                 <h3 className="p-1 my-4 bg-gray-100 dark:bg-gray-800 rounded-md text-center text-[15px]">هدفون و هندزفری</h3>
                                 <ul className="flex flex-col gap-3 text-[14px]">
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             هدفون
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             ایرپاد
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                            هدست
                                         </Link>
                                     </li>
@@ -134,7 +134,7 @@ useEffect(() => {
                         </div>
                     </li>
                     <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
-                        <Link to="/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
+                        <Link to="/technolife/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
                             <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/handWatch logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">ساعت هوشمند</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
@@ -147,27 +147,27 @@ useEffect(() => {
                                 <h3 className="p-1 my-4 bg-gray-100 dark:bg-gray-800 rounded-md text-center text-[15px]">ساعت هوشمند</h3>
                                 <ul className="flex flex-col gap-3 text-[14px]">
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             اپل واچ
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             ساعت هوشمند سامسونگ
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             ساعت هوشمند شیایومی
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                              ساعت هوشمند تسکو
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                              ساعت هوشمند ریلمی
                                         </Link>
                                     </li>
@@ -177,7 +177,7 @@ useEffect(() => {
                     </li>
                     {[...Array(5)].map(()=>(
                     <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
-                        <Link to="/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
+                        <Link to="/technolife/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
                             <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/laptop logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">لپتاپ</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 hidden group-hover:block mr-auto" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
@@ -190,27 +190,27 @@ useEffect(() => {
                                 <h3 className="p-1 my-4 bg-gray-100 dark:bg-gray-800 rounded-md text-center text-[15px]">لپتاپ</h3>
                                 <ul className="flex flex-col gap-3 text-[14px]">
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             ایسوس
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             مک بوک
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             اچ پی
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             لنوو
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/product" className="hover:font-bold">
+                                        <Link to="/technolife/product" className="hover:font-bold">
                                             سرفیس
                                         </Link>
                                     </li>
@@ -252,7 +252,7 @@ useEffect(() => {
                     </section>
                     {/* login */}
                     <section className="my-5 pb-5 border-b-2 border-blue-950 dark:border-gray-200">
-                        <Link to="/login" className="px-4 py-2 text-[18px] flex justify-center items-center gap-5 bg-blue-950 dark:bg-gray-200 text-white dark:text-gray-900 rounded-md duration-300">
+                        <Link to="/technolife/login" className="px-4 py-2 text-[18px] flex justify-center items-center gap-5 bg-blue-950 dark:bg-gray-200 text-white dark:text-gray-900 rounded-md duration-300">
                             <span>ورود</span> <span>|</span> <span>ثبت نام</span>
                         </Link>
                     </section>

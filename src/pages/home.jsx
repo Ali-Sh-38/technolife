@@ -56,7 +56,7 @@ const Home = ()=>{
             <Slider className="productList" slidesPerView={3.5} spaceBetween={20} breakpoints={{1280 : {slidesPerView : 7 , spaceBetween : 50} , 768 : {slidesPerView : 5 , spaceBetween : 50}}} pagination={false} navigation={false} loop={false} autoplay={false} speed={800} freeMode={true}>
                 {[...Array(10)].map((x,i)=>(
                 <SwiperSlide>
-                    <Link to="/list" key={i} className="group">
+                    <Link to="/technolife/list" key={i} className="group">
                         <div className="aspect-square rounded-full overflow-hidden border-4 border-blue-500 group-hover:border-green-500">
                             <img src="images/tablet list.webp" alt="" className="w-full h-full object-cover p-1"/>
                         </div>
@@ -74,7 +74,7 @@ const Home = ()=>{
                     <h2 className="font-semibold md:text-[20px] text-[18px]">
                         تکنو آف
                     </h2>
-                    <Link to="/list" className="flex items-center md:text-[18px] text-[14px]">
+                    <Link to="/technolife/list" className="flex items-center md:text-[18px] text-[14px]">
                         <span>نمایش همه</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="md:size-5 size-4" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
@@ -86,7 +86,7 @@ const Home = ()=>{
                 <Slider className="offerSlider" navigation={true} pagination={false} slidesPerView={2.5} spaceBetween={30} breakpoints={{1280 : {slidesPerView : 5 , spaceBetween : 60} , 768 : {slidesPerView : 4 , spaceBetween : 50}}} autoplay={{delay : 3000}} speed={800} loop={false} freeMode={false}>
                     {products.map((props)=>(
                         <SwiperSlide>
-                            <Link to={`/product/${props.id}`}>
+                            <Link to={`/technolife/product/${props.id}`}>
                                 <ProductCart
                                 title={props.title}
                                 hasDiscount={props.hasDiscount}
@@ -105,16 +105,16 @@ const Home = ()=>{
         </div>
         {/* simple img 1*/}
         <div className="my-15 md:mx-10 mx-4 flex md:flex-row flex-col justify-around text-black dark:text-white md:gap-10 gap-5">
-            <Link to="/list/jewelery" className="rounded-xl overflow-hidden border p-5">
+            <Link to="/technolife/list/jewelery" className="rounded-xl overflow-hidden border p-5">
                 <span className="hover:scale-110 duration-500"> جواهرات - لیست واقعی</span>
             </Link>
-            <Link to="/list/men's clothing" className="rounded-xl overflow-hidden border p-5">
+            <Link to="/technolife/list/men's clothing" className="rounded-xl overflow-hidden border p-5">
                 <span className="hover:scale-110 duration-500"> لباس های مردانه - لیست واقعی</span>
             </Link>
-            <Link to="/list/women's clothing" className="rounded-xl overflow-hidden border p-5">
+            <Link to="/technolife/list/women's clothing" className="rounded-xl overflow-hidden border p-5">
                 <span className="hover:scale-110 duration-500"> لباس های زنانه - لیست واقعی</span>
             </Link>
-            <Link to="/list/electronics" className="rounded-xl overflow-hidden border p-5">
+            <Link to="/technolife/list/electronics" className="rounded-xl overflow-hidden border p-5">
                 <span className="hover:scale-110 duration-500"> لیست واقعی الکترونیکی</span>
             </Link>
         </div>
@@ -155,13 +155,13 @@ const Home = ()=>{
         </div>
         {/* simple img 2*/}
         <div className="my-15 md:mx-10 mx-4 flex md:flex-row flex-col md:gap-10 gap-5">
-            <Link to="/list" className="rounded-xl overflow-hidden">
+            <Link to="/technolife/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/iphone 17.webp" alt="..." />
             </Link>
-            <Link to="/list" className="rounded-xl overflow-hidden">
+            <Link to="/technolife/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/iphone 17.webp" alt="..." />
             </Link>
-            <Link to="/list" className="rounded-xl overflow-hidden">
+            <Link to="/technolife/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/iphone 17.webp" alt="..." />
             </Link>
         </div>
@@ -205,7 +205,7 @@ const Home = ()=>{
         </div>
         {/* big img */}
         <div className="my-15 md:mx-10 mx-0 md:rounded-t-full overflow-hidden">
-            <Link to="/list">
+            <Link to="/technolife/list">
                 <img className="w-full" src="images/digital clock.webp" alt="" />
             </Link>
         </div>
@@ -250,31 +250,31 @@ const Home = ()=>{
                 برترین های لپ‌تاپ
             </h2>
             <section className="flex flex-wrap justify-center items-center gap-10 mt-5 dark:text-gray-300">
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
                     </p>
                 </Link>
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/hp.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         اچ پی
@@ -284,10 +284,10 @@ const Home = ()=>{
         </div>
         {/* simple img 3*/}
         <div className="my-15 md:mx-10 mx-4 flex md:flex-row flex-col md:gap-10 gap-5">
-            <Link to="/list" className="rounded-xl overflow-hidden">
+            <Link to="/technolife/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/salamat.webp" alt="..." />
             </Link>
-            <Link to="/list" className="rounded-xl overflow-hidden">
+            <Link to="/technolife/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/salamat.webp" alt="..." />
             </Link>
         </div>
@@ -332,43 +332,43 @@ const Home = ()=>{
                 برترین های هندزفری
             </h2>
             <section className="flex flex-wrap justify-center items-center md:gap-10 gap-5 mt-5 dark:text-gray-300">
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
                     </p>
                 </Link>
-                <Link to="/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
+                <Link to="/technolife/list" className="group w-1/5 md:w-1/6 flex flex-col items-center">
                     <img src="images/qcy.webp" alt="" className="group-hover:-translate-y-2 duration-300"/>
                     <p className="mt-2">
                         کیوسی وای
@@ -378,10 +378,10 @@ const Home = ()=>{
         </div>
         {/* simple img 4*/}
         <div className="my-15 md:mx-10 mx-4 flex md:flex-row flex-col md:gap-10 gap-5">
-            <Link to="/list" className="rounded-xl overflow-hidden">
+            <Link to="/technolife/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/flashmemory.webp" alt="..." />
             </Link>
-            <Link to="/list" className="rounded-xl overflow-hidden">
+            <Link to="/technolife/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/flashmemory.webp" alt="..." />
             </Link>
         </div>
@@ -393,7 +393,7 @@ const Home = ()=>{
             <div className="grid lg:grid-cols-6 lg:grid-rows-2 md:grid-cols-4 grid-cols-3 md:gap-10 gap-5 mt-5">
                 
                 {[...Array(12)].map((i)=>(
-                <Link key={i} to="/list" className="relative group rounded-xl overflow-hidden">
+                <Link key={i} to="/technolife/list" className="relative group rounded-xl overflow-hidden">
                     <img className="w-full mx-auto hover:scale-110 duration-300" src="images/machinwash.webp" alt="" />
                     <p className="absolute right-0 w-full md:translate-y-5 group-hover:-translate-y-10 -translate-y-10 duration-300 p-2 text-white bg-black/50 z-20">
                         لباسشویی
@@ -404,10 +404,10 @@ const Home = ()=>{
         </div>
         {/* simple img 5*/}
         <div className="my-15 md:mx-10 mx-4 flex md:flex-row flex-col md:gap-10 gap-5">
-            <Link to="/list" className="rounded-xl overflow-hidden">
+            <Link to="/technolife/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/powerbank.webp" alt="..." />
             </Link>
-            <Link to="/list" className="rounded-xl overflow-hidden">
+            <Link to="/technolife/list" className="rounded-xl overflow-hidden">
                 <img className="hover:scale-110 duration-500" src="images/powerbank.webp" alt="..." />
             </Link>
         </div>

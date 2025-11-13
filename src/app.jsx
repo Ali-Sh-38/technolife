@@ -25,7 +25,7 @@ const App = ()=>{
         <CartProvider>
         {location.pathname !== "/technolife/login" && <Nav />}
         <Routes>
-            <Route path='/technolife' element={<Home/>}/>
+            <Route path='/technolife/' element={<Home/>}/>
             <Route path='/technolife/list?/:category' element={<List/>}/>
             <Route path='/technolife/product/:id' element={<Product/>}/>
             <Route path='/technolife/cart' element={<Cart/>}/>
