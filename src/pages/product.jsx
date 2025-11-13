@@ -63,25 +63,25 @@ const Product = ()=>{
                       {product.title}
                     </h1>
                     {/* opinion */}
-                    <section className="text-blue-500 text-[18px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
+                    <section className="text-blue-500 text-[16px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
                         <a href="#a3">
                             نطرات کاربران   {}
                         </a>
                     </section>
                     {/* color */}
-                    <section className="text-blue-500 text-[18px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
+                    <section className="text-blue-500 text-[16px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
                         <h2>
                             رنگ    {}
                         </h2>
                     </section>
-                    <section className="text-blue-500 text-[18px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
+                    <section className="text-blue-500 text-[16px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
                         <h2>
                             تعداد    {}
                         </h2>
                     </section>
                     {/* option */}
                     <section>
-                        <h2 className="text-blue-500 text-[18px] mb-1">
+                        <h2 className="text-blue-500 text-[16px] mb-1">
                             ویژگی‌های اصلی
                         </h2>
                         <div className="flex flex-col gap-5 border border-gray-300 dark:border-gray-700 rounded-md p-5">
