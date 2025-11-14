@@ -26,11 +26,22 @@ const Cart = ()=>{
                         {/* product */}
                         <div className="flex md:flex-row flex-col justify-between m-5">
                             <section>
-                                <h3 className="text-[18px] dark:text-gray-200">
+                                <h3 className="text-[22px] dark:text-gray-200">
                                     {item.title}
                                 </h3>
+                                {/* color && material */}
+                                <div className="flex gap-5 items-center text-blue-500 text-[16px] mt-1">
+                                    <section className="flex gap-1 items-center">
+                                        <span> رنگ :</span>
+                                        <section className="aspect-square w-4 border-2 border-gray-700 dark:border-gray-300 bg-gray-500 rounded-sm"></section>
+                                    </section>
+                                    <section className="flex gap-1 items-center">
+                                        <span>جنس :</span>
+                                        <section className="text-gray-700 dark:text-gray-300"> تیتانیوم</section>
+                                    </section>
+                                </div>
                                 {/* zemanat */}
-                                <div className="md:flex hidden flex-col gap-2 mt-5 text-[14px] text-gray-500">
+                                <div className="md:flex hidden flex-col gap-2 mt-5 text-[14px] text-gray-400">
                                     <section className="flex items-center gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="size-4 " viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
@@ -94,7 +105,7 @@ const Cart = ()=>{
                 </div>
             </div>
             {/* total */}
-            <div className="flex-1 sticky top-10 h-max">
+            <div className="flex-1 sticky top-30 h-max">
                 <h2 className="text-[18px] dark:text-gray-200 p-1">
                 صورت حساب
                 </h2>

@@ -392,7 +392,7 @@ const Home = ()=>{
             </h2>
             <div className="grid lg:grid-cols-6 lg:grid-rows-2 md:grid-cols-4 grid-cols-3 md:gap-10 gap-5 mt-5">
                 
-                {[...Array(12)].map((i)=>(
+                {[...Array(12)].map((x,i)=>(
                 <Link key={i} to="/technolife/list" className="relative group rounded-xl overflow-hidden">
                     <img className="w-full mx-auto hover:scale-110 duration-300" src="images/machinwash.webp" alt="" />
                     <p className="absolute right-0 w-full md:translate-y-5 group-hover:-translate-y-10 -translate-y-10 duration-300 p-2 text-white bg-black/50 z-20">

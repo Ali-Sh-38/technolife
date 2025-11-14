@@ -4,6 +4,8 @@ import useShow from "../custom hook/useShow";
 import Sidebar from "./sidebar";
 import { useCart } from "./cartContext";
 import SearchBoxMoble from "./searchBoxMobile";
+import logo from "/images/logo.svg";
+import whiteLogo from "/images/white_logo.svg";
 
 const Nav = ()=>{
 
@@ -59,7 +61,6 @@ useEffect(() => {
   }
 }, [mod]);
   
-
 // nav moblie
 const [showMenu , setShowMenu] =useState(false)
 const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
@@ -74,9 +75,9 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
                 <section className="flex gap-5 grow">
                     {/* logo */}
                     {mod ? 
-                    <Link to="/technolife/"><img className="min-w-25" src="/images/logo.svg" alt="technoLife" /></Link>
+                    <Link to="/technolife/"><img className="min-w-25" src={logo} alt="technoLife" /></Link>
                     :
-                    <Link to="/technolife/"><img className="min-w-25" src="/images/white_logo.svg" alt="technoLife" /></Link>
+                    <Link to="/technolife/"><img className="min-w-25" src={whiteLogo} alt="technoLife" /></Link>
                     }
                     {/* search box */}
                     <div ref={searchRef} className="relative w-full flex gap-5 items-center px-5 py-2 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-400 duration-300">
@@ -84,13 +85,15 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
                         <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                         </svg>
                         <input onFocus={toggleSearchBox} onChange={handelChange} type="search" className="w-full placeholder:text-[14px] placeholder:text-gray-400 outline-none" placeholder="محصول , برند یا دسته مورد نظرتان را جستجو کنید"/>
-                        <div className={`absolute top-12 right-0 lg:w-1/2 md:w-full bg-white dark:bg-gray-900 rounded-md p-5 z-110 duration-300 ${showSearchBox ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-10"}`}>
-                            <p className="text-[14px] text-gray-400 border-b border-blue-950 dark:border-gray-300 pb-2">جستجو برای .. {searchText}</p>
-                            <div className="text-[14px] mt-5">
+                        <div className={`absolute top-12 right-0 w-full text-[14px] text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900 rounded-md p-5 z-110 duration-300 ${showSearchBox ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-10"}`}>
+                            <p className=" border-b border-gray-300 dark:border-gray-700 pb-2">
+                                جستجو برای .. {searchText}
+                            </p>
+                            <div className="mt-5">
                                 <p>
                                     جستجو های محبوب
                                 </p>
-                                <div className="flex flex-wrap gap-2 p-2 text-gray-500 dark:text-gray-300">
+                                <div className="flex flex-wrap gap-2 p-2 text-blue-500">
                                 <Link to="/technolife/list" className="text-[12px] px-2 border border-gray-300 dark:border-gray-700 rounded-full">ساعت هوشمند</Link>
                                 <Link to="/technolife/list" className="text-[12px] px-2 border border-gray-300 dark:border-gray-700 rounded-full">گوشی</Link>
                                 <Link to="/technolife/list" className="text-[12px] px-2 border border-gray-300 dark:border-gray-700 rounded-full">کابل شارژ</Link>
@@ -181,9 +184,9 @@ const [showSearchBoxMoble , setShowSearchBoxMoble] =useState(false)
                 {/* logo */}
                 <section className="absolute right-1/2 translate-x-1/2 w-25">
                     {mod ? 
-                    <Link to="/technolife"><img src="images/logo.svg" alt="technoLife" /></Link>
+                    <Link to="/technolife"><img src={logo} alt="technoLife" /></Link>
                     :
-                    <Link to="/technolife"><img src="images/white_logo.svg" alt="technoLife" /></Link>
+                    <Link to="/technolife"><img src={whiteLogo} alt="technoLife" /></Link>
                     }
                 </section>
                 {/* menu */}

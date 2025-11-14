@@ -175,8 +175,8 @@ useEffect(() => {
                             </div>
                         </div>
                     </li>
-                    {[...Array(5)].map(()=>(
-                    <li onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
+                    {[...Array(5)].map((x,i)=>(
+                    <li key={i} onClick={setOpen} className="group hover:bg-gray-100 dark:hover:bg-gray-800">
                         <Link to="/technolife/list" className="flex items-center gap-5 py-3 px-2 w-full border-b border-gray-300 dark:border-gray-700">
                             <img className="w-8 bg-gray-200 dark:bg-gray-700 p-1 rounded-full shadow" src="images/laptop logo.svg" alt="laptop" />
                             <h3 className="text-[15px]">لپتاپ</h3>

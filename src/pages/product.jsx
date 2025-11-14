@@ -7,7 +7,8 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useCart } from "../component/cartContext";
 import { Toaster, toast } from "react-hot-toast";
-import useShow from "../custom hook/useShow";
+
+import zemanat from "/images/zemanat.svg";
 
 
 const Product = ()=>{
@@ -17,6 +18,10 @@ const Product = ()=>{
     const { id } = useParams();
     const [product, setProduct] = useState();
 
+    const discount = Math.floor(Math.random() * 20) + 10;
+
+    const [fullImage, setFullImage] = useState(null);
+    
     useEffect(()=> {
         axios.get(`https://fakestoreapi.com/products/${id}`).then(response => {
             console.log(response.data);
@@ -38,15 +43,11 @@ const Product = ()=>{
         });
     }, [id]);
 
-    const discount = Math.floor(Math.random() * 20) + 10;
-
     
-    const [fullImage, setFullImage] = useState(null);
-
-
-    if (!product) return <div>در حال بارگذاری...</div>;
 
     const successSend = () => toast.success('محصول به سبد اضافه شد')
+    
+    if (!product) return <div>در حال بارگذاری...</div>;
     
     
     return(
@@ -62,22 +63,53 @@ const Product = ()=>{
                     <h1 className="text-blue-950 dark:text-gray-300 text-[22px]">
                       {product.title}
                     </h1>
-                    {/* opinion */}
-                    <section className="text-blue-500 text-[16px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
-                        <a href="#a3">
-                            نطرات کاربران   {}
-                        </a>
-                    </section>
+                    
                     {/* color */}
-                    <section className="text-blue-500 text-[16px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
+                    <section className="text-blue-500 text-[16px] border-b border-gray-300 dark:border-gray-700 p-1 w-full flex gap-4 items-center">
                         <h2>
-                            رنگ    {}
+                            رنگ :
                         </h2>
+                        {/* color */}
+                        <div className="flex gap-1">
+                            <label className="aspect-square w-4 border-2 border-gray-700 dark:border-gray-300 bg-gray-500 rounded-sm"></label>
+                            <input type="radio" id="gray" name="color"/>
+                        </div>
+                        <div className="flex gap-1">
+                            <label className="aspect-square w-4 border-2 border-gray-700 dark:border-gray-300 bg-blue-600 rounded-sm"></label>
+                            <input type="radio" id="blue" name="color"/>
+                        </div>
+                        <div className="flex gap-1">
+                            <label className="aspect-square w-4 border-2 border-gray-700 dark:border-gray-300 bg-white rounded-sm"></label>
+                            <input type="radio" id="white" name="color"/>
+                        </div>
                     </section>
-                    <section className="text-blue-500 text-[16px] border-b-2 border-gray-300 dark:border-gray-700 p-1 w-max">
+                    <section className="text-blue-500 text-[16px] border-b border-gray-300 dark:border-gray-700 p-1 w-full flex gap-4">
                         <h2>
-                            تعداد    {}
+                            جنس :
                         </h2>
+                        {/* material */}
+                        <div className="flex gap-1">
+                            <label className="text-gray-700 dark:text-gray-300">فولاد</label>
+                            <input type="radio" id="steel" name="material"/>
+                        </div>
+                        <div className="flex gap-1">
+                            <label className="text-gray-700 dark:text-gray-300">تیتانیوم</label>
+                            <input type="radio" id="titanium" name="material"/>
+                        </div>
+                        <div className="flex gap-1">
+                            <label className="text-gray-700 dark:text-gray-300">پلاستیک</label>
+                            <input type="radio" id="plastic" name="material"/>
+                        </div>
+                    </section>
+                    {/* opinion */}
+                    <section className="text-blue-500 text-[16px] border-b border-gray-300 dark:border-gray-700 p-1 w-full flex gap-2 items-center">
+                        <a href="#a3">
+                            نطرات کاربران
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                        </svg>
+
                     </section>
                     {/* option */}
                     <section>
@@ -106,6 +138,7 @@ const Product = ()=>{
                             </section>
                         </div>
                     </section>
+                    
                 </section>
                 {/* image && icons */}
                 <section className="md:w-4/10 w-full">
@@ -158,7 +191,7 @@ const Product = ()=>{
                         </div>
                         {/* other images */}
                         <div className="flex justify-center gap-2 h-20">
-                            {[...Array(4)].map((i)=>(
+                            {[...Array(4)].map((x,i)=>(
                                 <div key={i} onClick={() => setFullImage(product.image)}
                                 className="w-20 aspect-square cursor-pointer rounded-md overflow-hidden border-2 border-blue-400 hover:border-blue-700 p-1">
                                 <img src={product.image} className="w-full h-full object-contain!" />
@@ -376,7 +409,7 @@ const Product = ()=>{
             <div className="flex justify-center items-center gap-10 mt-10">
                 {[...Array(4)].map((x,i2)=>(
                 <section key={i2} className="flex flex-col items-center">
-                    <img className="md:w-15 w-10" src="/images/zemanat.svg" alt="..." />
+                    <img className="md:w-15 w-10" src={zemanat} alt="" />
                     <p className="text-gray-500 md:text-[14px] text-[10px] text-center">۷ روز ضمانت برگشت کالا</p>
                 </section>
                 ))}
